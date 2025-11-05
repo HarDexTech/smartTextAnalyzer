@@ -66,3 +66,7 @@ h1{
     text-align: center;
     font-size: var(--fontSize);
 }
+#result{
+    color: white;
+    font-size: calc(var(--fontSize)/2);
+}
