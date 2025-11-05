@@ -1,0 +1,68 @@
+:root {
+    --bgColor: rgb(32, 28, 28);
+    --text: ;
+    --peripherals: ;
+    --defWidth: ;
+    --transitions: 0.3s ease-in-out;
+    --borderRadius: calc(infinity * 1px);
+    --fontSize: 40px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+    background-color: var(--bgColor);
+}
+button{
+    font-size: calc(var(--fontSize)/2);
+    background-color: rgb(19, 19, 177);
+    width: 200px;
+    height: 50px;
+    border-radius: var(--borderRadius);
+    border: none;
+    cursor: pointer;
+}
+button:active{
+    color: white;
+    transition: none;
+}
+button:hover{
+    filter: opacity(0.8);
+    transition: all var(--transitions);
+}
+textarea{
+    outline: none;
+    border-radius: 25px;
+    border: none;
+    padding: 20px 15px;
+    font-size: 16px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+h3{
+    color: white;
+    margin-bottom: 15px;
+}
+.contain{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+h1{
+    color: white;
+    margin: 0px calc(var(--fontSize)/2) 0px calc(var(--fontSize)/2);
+    text-align: center;
+    font-size: var(--fontSize);
+}

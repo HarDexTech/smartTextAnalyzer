@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="contain">
+        <h1>Text Analyzer</h1>
+      <textarea
+        name="text"
+        id="inputText"
+        cols="100"
+        rows="20"
+        placeholder="Enter Text"
+      ></textarea>
+
+      <div class="container">
+        <button id="wordCount" onclick="countWord()">Word Count</button>
+        <button id="characterCount" onclick="countChar()">Character Count</button>
+        <button id="findWord" onclick="findWords()">Find Word</button>
+      </div>
+
+      <div class="output">
+        <h3>Output:</h3>
+        <p id="result"></p>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
